@@ -15,5 +15,6 @@ export default {
  */
 async function testMethod(req, res) {
   const result = await TestService.testMethod();
+	result['success'] = 'manishbisht'
   res.json(result);
 }
